@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,400;1,200;1,300&display=swap');
+
+:root {
+    --reaction-background-color: #fff6f5;
+    --memory-background-color: #fffbf2;
+    --verbal-background-color: #f2fbfa;
+    --visual-background-color: #f3f3fd;
+    --button-background-color: #303b59;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Hanken Grotesk', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.result {
+    background: linear-gradient(#6541fd, #4b36f3, #322de9);
+    color: #fff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 325px;
+    height: 325px;
+}
+
+.result h3 {
+    color: #a594f6
+}
+
+.score {
+    background: linear-gradient(#4a24cf, #4b36f3, #6541fd);;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score strong {
+    font-size: 3rem;
+}
+
+.score span {
+    color: #7065ee;
+    font-weight: bold;
+}
+
+.feedback h3 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.feedback p {
+    color: #b8b6f9;
+    margin: -10px 20px;
+    line-height: 1.5rem;
+}
+
+.summary {
+    width: 120px;
+    height: 120px;
+    margin: 15px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.summary h3 {
+    color: #3a3d4d;
+}
+
+.summary strong {
+    color: #464454
+}
+
+.summary .competence img {
+    transform: translateY(20%);
+}
+
+.summary #reaction, #memory, #verbal, #visual {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 250%;
+    border-radius: 16px;
+    padding: 8px 16px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.summary .competence-score span {
+    color: #9ca5ab;
+    font-weight: bold;
+}
+
+#reaction, #reaction > span {
+    background-color: var(--reaction-background-color);
+    color: #d68380;
+    font-weight: bold;
+}
+
+#memory, #memory > span {
+    background-color: var(--memory-background-color);
+    color: #ebc36f;
+    font-weight: bold;
+}
+
+#verbal, #verbal > span {
+    background-color: var(--verbal-background-color);
+    color: #66c0aa;
+    font-weight: bold;
+}
+
+#visual, #visual > span {
+    background-color: var(--visual-background-color);
+    color: #373ba3;
+    font-weight: bold;
+}
+
+button {
+    width: 250%;
+    border-radius: 16px;
+    margin: 12px 0;
+    padding: 12px;
+    font-family: inherit;
+    background-color: var(--button-background-color);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #5c3dfa;
+}
+
+@media(min-width: 481px) {
+    body {
+        height: 100vh;
+    }
+    .container {
+        display: flex;
+    }
+
+    .result {
+        width: 50%;
+        height: 100%;
+    }
+
+    .summary {
+        height: 100%;
+        margin-left: 50px;
+    }
+}
+
