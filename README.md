@@ -2,6 +2,8 @@
 
 An HTML & CSS Frontend Mentor challenge for the purpose of practicing. A mockup is given and has to be reproduced as close as possible to the original. Responsive design, mobile first.
 
+Link to the challenge: https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV
+
 **Mobile Version**
 
 ![np8gcjsljpn4zlzqdusd](https://github.com/Vasiliki-Georgiou/Results_Summary_Component_HTML_CSS_FrontEnd_Mentor_Challenge/assets/113369011/b735795b-7389-4161-87b9-8cd82a7c9f77)
